@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap');
+
+*{
+    font-family: 'Noto Sans TC', sans-serif !important;
+}
+.navbor-height{
+    height: 50px;
+}
+.bg-place{
+    background-color: #D6C385;
+}
+.bg-sm-place{
+    background-color: #C9C15E!important;
+}
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .line-bottom-dashed {
+    border-bottom: 2px dashed rgba(124, 197, 75, 0.376);
+  }
+  .line-top-dashed {
+    border-top: 2px dashed rgba(124, 197, 75, 0.376);
+  }
+  
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 36px;
+    height: 20px;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    /* 設定用手 */
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 3px;
+    top: 1px;
+    background-color: white;
+    transition: 0.4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196f3;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(13px);
+  }
+  
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  
